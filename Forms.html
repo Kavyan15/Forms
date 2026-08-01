@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="icon" href="Images/text-input.png">
+    <link rel="stylesheet" href="/CSS/Forms.css">
+</head>
+<body>
+  <header style="text-align: center; font-size: 50px;">Forms</header>
+  <br><hr><br>
+  <form action="/Images/Forms.php">
+    <table width="100%" border="0">
+      <tr>
+
+         <td width="50%">
+          <label for="Username">Username:</label>
+          <input type="text" id="Username" placeholder="DIO" required>
+          </td>
+
+          <td width="50%">
+          <label for="Email">Email:</label>
+          <input id="Email" type="email" placeholder="Email123@gmail.com" required>
+          </td>
+      </tr>
+
+       <tr>
+        <td colspan="2"><br><hr><br></td>
+       </tr>   
+
+       <tr>
+        <td>
+          <label for="Quantity">Age:</label>
+          <input id="Quantity" type="number" placeholder="0-99" min="0" max="99" required><br>
+        </td>
+
+        <td>
+          <label for="Phone">Phone Number:</label>
+          <input id="Phone" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+        </td>
+        </tr>
+
+        <tr>
+        <td><br>
+         <label for="Gender">Gender:</label>
+         <input id="Male" type="radio" name="Gender" required> <label for="Male">Male</label>
+         <input id="Female" type="radio" name="Gender" required> <label for="Female">Female</label>
+         <input id="No" type="radio" name="Gender" required> <label for="No">Rather Not Say</label><br><br>
+        </td>
+
+        <td><br>
+          <label for="Language">What Programming Language do you want to use?</label>
+          <select id="Language" required>
+            <option value="HTML and CSS">HTML and CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+          </select><br><br>
+        </td>
+       </tr>
+
+       <tr>
+        <td>
+          <label for="DateBirth">Date of Birth:</label>
+          <input id="DateBirth" type="date" required>
+        </td>
+        <td>
+          <label for="Comment">Comment:</label>
+          <textarea id="Comment" rows="3" cols="25" placeholder="Optional"></textarea>
+        </td>
+       </tr>
+
+       <tr>
+        <td colspan="2"><br><hr><br></td>
+       </tr>
+
+       <tr>
+        <td width="50%">
+          <label for="Password">Password:</label>
+          <input id="Password" type="password" placeholder="*******" required>
+        </td>
+        <td width="50%">
+          <label for="Student">Are you a Student?</label>
+          <select required>
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+          </select>
+        
+        </td>  
+       </tr>
+
+  
+    <tr>
+      <td>
+         <input type="submit">
+          <input type="reset">
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><br><hr><br></td>
+    </tr>
+
+
+
+    </table>
+    </form>
+    <footer style="text-align: center; font-size: 30px;">Made by: Kavyan Majaz</footer>
+</body>
+</html>
